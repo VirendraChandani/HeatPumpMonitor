@@ -1,0 +1,3 @@
+@HeatPumpMonitor.API_HostAddress = http://localhost:5173
+Accept: application/json
+###
