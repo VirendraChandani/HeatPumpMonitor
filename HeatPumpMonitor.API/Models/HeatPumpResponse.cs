@@ -4,6 +4,6 @@
     {
         public bool Success { get; set; }
         public int Count { get; set; }
-        public List<HeatPumpProduct> Products { get; set; }
+        public List<HeatPumpProduct> Products { get; set; } = [];
     }
 }

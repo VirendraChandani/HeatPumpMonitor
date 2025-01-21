@@ -128,7 +128,6 @@ namespace HeatPumpMonitor.API.Services
 
         private double ExtractRating(HtmlNode node)
         {
-            //var ratingText = ExtractText(node, ".//div[contains(@class, 'vQBT0O')]/@title");
             var ratingElement = node.SelectSingleNode(".//div[contains(@class, 'vQBT0O')]");
             var ratingText = ratingElement?.GetAttributeValue("title", string.Empty) ?? string.Empty;
             if (string.IsNullOrEmpty(ratingText)) return 0;

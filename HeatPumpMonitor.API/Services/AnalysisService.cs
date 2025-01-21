@@ -28,7 +28,7 @@ namespace HeatPumpMonitor.API.Services
                 }
 
                 if (records.Count == 0)
-                    return new HeatPumpSummary();
+                    return new HeatPumpSummary { DateGenerated = DateTime.UtcNow };
 
                 var summary = new HeatPumpSummary
                 {
